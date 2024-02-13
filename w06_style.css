@@ -1,0 +1,23 @@
+h1 {
+  color:orange;
+}
+
+body{
+  background-color: rgb(143 188 143 / 50%)
+}
+
+p{
+  text-align: center;
+  border:solid;
+  border: 2px lightsteelblue;
+  font-size: 20px;
+  font-weight:normal;
+  font-family: "Times";
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border:solid;
+  border: 3px lightsteelblue;
+}
