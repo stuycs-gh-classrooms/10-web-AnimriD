@@ -11,5 +11,8 @@ p{
   font-family: "Times";
 }
 
-nav{
+h1{
+  font-size: 50px
+  font-weight:bold;
+  font-family: "Arial"
 }
