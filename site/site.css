@@ -1,0 +1,12 @@
+body{
+  background-color: rgb(143 188 143 / 50%)
+}
+
+p{
+  text-align: center;
+  border:solid;
+  border: 2px lightsteelblue;
+  font-size: 20px;
+  font-weight:normal;
+  font-family: "Times";
+}
