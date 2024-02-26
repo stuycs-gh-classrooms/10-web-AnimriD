@@ -90,9 +90,12 @@ p{
 
 h1{
   display: block;
-  margin: auto;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   text-align: center;
   font-size: 50px
   font-weight:bold;
-  font-family: "Arial"
+  font-family: "Arial";
 }
