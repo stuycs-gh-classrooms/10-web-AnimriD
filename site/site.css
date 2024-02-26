@@ -5,8 +5,13 @@ body{
 }
 nav{
   background-color: rgb(100 149 237 / 75%);
-  margin: 8px;
+  margin: 0;
+  padding: 0;
   border-color: red;
+  list-style-type: none;
+}
+.current{
+  background-color: red;
 }
 p{
   text-align: center;
