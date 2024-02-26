@@ -38,6 +38,15 @@ nav{
   display: inline;
   overflow: hidden;
 }
+li{
+  display: line;
+}
+ul{
+  background-color: rgb(100 149 237 / 75%);
+}
+li{
+  border-right: 2px solid black;
+}
 
 .YTLinks{
   list-style-type: circle;
