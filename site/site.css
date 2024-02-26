@@ -3,7 +3,7 @@ body{
   display:block;
   margin:10px;
 }
-ul{
+nav, ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,11 +11,11 @@ ul{
   background-color: rgb(100 149 237 / 75%);
   display: block;
 }
-li{
+nav, li{
   display: inline;
   float: left;
 }
-.current{
+nav, .current{
   background-color: red;
 }
 nav{
