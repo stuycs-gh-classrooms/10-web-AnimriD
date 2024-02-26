@@ -3,17 +3,35 @@ body{
   display:block;
   margin:10px;
 }
+
 nav, ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(100 149 237 / 75%);
-  display: block;
 }
 nav, li{
   display: inline;
   float: left;
+}
+nav, li{
+  float: left;
+}
+nav, li, a{
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+li, .current{
+  background-color: red;
+}
+a{
+  display: block;
+  padding: 8px;
+  background-color: rgb(100 149 237 / 75%);
 }
 .current{
   background-color: red;
