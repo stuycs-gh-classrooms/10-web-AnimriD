@@ -41,6 +41,9 @@ ul{
   background-color: rgb(100 149 237 / 75%);
 }
 ul{
+  background-color: rgb(100 149 237 / 75%);
+  border: solid;
+  border-color: red;
   list-style-type: none;
   margin: 0;
   padding: 0;
