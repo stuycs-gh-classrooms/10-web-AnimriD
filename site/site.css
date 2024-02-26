@@ -10,6 +10,10 @@ nav{
   border-color: red;
   list-style-type: none;
 }
+ul, li {
+  list-style-type: none;
+  text-decoration: none;
+}
 .current{
   background-color: red;
 }
