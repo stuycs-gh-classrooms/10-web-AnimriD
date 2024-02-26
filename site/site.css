@@ -20,7 +20,7 @@ width: 50%;
   margin-right: auto;
 }
 nav{
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -29,7 +29,7 @@ nav{
   overflow: hidden;
 }
 li{
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
   margin: 0;
   padding: 0;
   display: line;
@@ -37,16 +37,16 @@ li{
   padding: 8px
 }
 ul{
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
   margin: 0;
   padding: 0;
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
 }
 ul{
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
   margin: 0;
   padding: 0;
-  background-color: rgb(100 149 237 / 75%);
+  background-color: rgb(105 105 105 / 75%);
   list-style-type: none;
   margin: 0;
   padding: 0;
