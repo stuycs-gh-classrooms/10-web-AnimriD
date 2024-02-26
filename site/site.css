@@ -5,6 +5,8 @@ body{
 }
 nav{
   background-color: rgb(100 149 237 / 75%);
+  margin: 8px;
+  border-color: red;
 }
 p{
   text-align: center;
