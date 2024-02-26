@@ -15,10 +15,16 @@ nav, li{
   display: inline;
   float: left;
 }
-nav, .current{
+.current{
   background-color: red;
 }
 nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(100 149 237 / 75%);
+  display: block;
   display:block;
   border:3px;
   border:solid;
