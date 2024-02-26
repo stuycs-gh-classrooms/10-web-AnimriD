@@ -23,4 +23,7 @@ nav{
   border:3px;
   border:solid;
   border-color: red;
+  float: left;
+  background-color: rgb(100 149 237 / 75%);
+  border-top-right-radius:inherit;
 }
