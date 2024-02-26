@@ -1,3 +1,17 @@
+nav{
+  display:block;
+  border:3px;
+  border:solid;
+  border-color: red;
+  float: left;
+  background-color: rgb(100 149 237 / 75%);
+  border-top-right-radius:initial;
+}
+.current{
+  background-color: red;
+  color: rgb(143 188 143 / 50%);
+}
+
 body{
   background-color: rgb(143 188 143 / 50%);
   display:block;
@@ -17,18 +31,4 @@ h1{
   font-size: 50px
   font-weight:bold;
   font-family: "Arial"
-}
-
-nav{
-  display:block;
-  border:3px;
-  border:solid;
-  border-color: red;
-  float: left;
-  background-color: rgb(100 149 237 / 75%);
-  border-top-right-radius:initial;
-}
-.current{
-  background-color: red;
-  color: rgb(143 188 143 / 50%);
 }
