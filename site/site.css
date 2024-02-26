@@ -24,6 +24,18 @@ margin-left: auto;
 margin-right: auto;
 width: 50%;
 }
+.history{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+.sitar{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 }
 .navbar, li {
   list-style-type: none;
