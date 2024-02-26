@@ -28,6 +28,7 @@ nav{
   text-decoration: none;
   display: inline;
   overflow: hidden;
+  width: 100%;
 }
 li{
   background-color: rgb(105 105 105 / 75%);
@@ -42,6 +43,7 @@ ul{
   margin: 0;
   padding: 0;
   background-color: rgb(105 105 105 / 75%);
+  width: 100%;
 }
 ul{
   background-color: rgb(105 105 105 / 75%);
@@ -52,6 +54,7 @@ ul{
   margin: 0;
   padding: 0;
   overlofw: hidden;
+  wdth: 100%;
 }
 li, .lin {
   display: block;
