@@ -9,11 +9,25 @@ nav{
   padding: 0;
   border-color: red;
   list-style-type: none;
+  display:inline;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 ul, li {
   list-style-type: none;
   text-decoration: none;
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+a:link{ text-decoration: none;}
 .current{
   background-color: red;
 }
