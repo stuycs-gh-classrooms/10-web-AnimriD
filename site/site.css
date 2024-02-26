@@ -18,10 +18,8 @@ nav{
   padding: 0;
   overflow: hidden;
 }
-.YTLinks{
-  list-style-type: circle;
-}
-ul, li {
+
+.navbar, li {
   list-style-type: none;
   text-decoration: none;
   text-font: 20px;
@@ -30,6 +28,10 @@ ul, li {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.YTLinks{
+  list-style-type: circle;
 }
 a:link{ text-decoration: none;}
 .current{
