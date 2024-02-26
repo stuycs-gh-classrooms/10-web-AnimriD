@@ -3,7 +3,43 @@ body{
   display:block;
   margin:10px;
 }
-
+nav{
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(100 149 237 / 75%);
+  }
+  li{
+    display: inline;
+    float: left;
+  }
+  li{
+    float: left;
+  }
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 20 px 24px;
+  text-decoration: none;
+  li, .current {
+    background-color: red;
+  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(100 149 237 / 75%);
+  display: block;
+  display:block;
+  border:3px;
+  border:solid;
+  border-color: red;
+  float: left;
+  background-color: rgb(100 149 237 / 75%);
+  border-top-right-radius:initial;
+}
 nav, ul{
   list-style-type: none;
   margin: 0;
@@ -18,7 +54,7 @@ nav, li{
 nav, li{
   float: left;
 }
-nav, li, a{
+nav{
   display: block;
   color: blue;
   text-align: center;
