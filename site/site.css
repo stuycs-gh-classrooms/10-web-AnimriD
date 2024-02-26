@@ -18,7 +18,13 @@ nav{
   padding: 0;
   overflow: hidden;
 }
-
+.mws{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+}
 .navbar, li {
   list-style-type: none;
   text-decoration: none;
