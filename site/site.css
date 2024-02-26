@@ -18,9 +18,13 @@ nav{
   padding: 0;
   overflow: hidden;
 }
+.YTLinks{
+  list-style-type: circle;
+}
 ul, li {
   list-style-type: none;
   text-decoration: none;
+  text-font: 20px;
   display: inline;
   float: left;
   margin: 0;
