@@ -70,7 +70,10 @@ li{
 }
 
 .YTLinks{
-  list-style-type: circle;
+display:block;
+list-style-type: circle;
+background: none;
+border: none;
 }
 a:link{ text-decoration: none;}
 .current{
