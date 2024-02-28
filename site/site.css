@@ -21,23 +21,26 @@ width: 50%;
 }
 
 nav{
-  background-color: rgb(105 105 105 / 75%);
-  margin: 0;
-  padding: 0;
+  border-radius: 20px;
+  background-color: rgb(0 191 25 / 75%);
+  text-align: left;
+}
+ul{
   list-style-type: none;
-  text-decoration: none;
+  overflow: none;
+}
+nav ul li{
   display: inline;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
 }
-li{
-  background-color: rgb(105 105 105 / 75%);
-  margin: 0;
-  padding: 0;
-  display: line;
-  float: left;
+
+nav a{
+  color: rgb(153 50 204);
 }
+
+nav a:hover{
+  background-color: red;
+}
+
 ul{
   background-color: rgb(105 105 105 / 75%);
   margin: 0;
@@ -45,17 +48,7 @@ ul{
   background-color: rgb(105 105 105 / 75%);
   width: 100%;
 }
-ul{
-  background-color: rgb(105 105 105 / 75%);
-  margin: 0;
-  padding: 0;
-  background-color: rgb(105 105 105 / 75%);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overlofw: hidden;
-  wdth: 100%;
-}
+
 li, .lin {
   display: block;
   text-align: center;
@@ -68,6 +61,7 @@ li{
   border-bottom: 2px solid black;
   border-left: 2px solid black;
 }
+
 
 .YTLinks{
 display:block;
@@ -108,5 +102,4 @@ h1{
   margin-top:25px;
   padding: 60px;
   text-align: center;
-
 }
