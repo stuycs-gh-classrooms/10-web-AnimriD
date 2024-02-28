@@ -32,7 +32,7 @@ nav{
   position: relative;
 }
 li{
-  background-color: rgb(105 105 105 / 75%);
+  background-color: rgb(0 191 255 / 75%);
   margin: 0;
   padding: 0;
   display: line;
@@ -40,17 +40,17 @@ li{
 }
 
 ul{
-  background-color: rgb(105 105 105 / 75%);
+  background-color: rgb(0 191 255 / 75%);
   margin: 0;
   padding: 0;
-  background-color: rgb(105 105 105 / 75%);
+  background-color: rgb(0 191 255 / 75%);
   width: 100%;
 }
 ul{
-  background-color: rgb(105 105 105 / 75%);
+  background-color: rgb(0 191 255 / 75%);
   margin: 0;
   padding: 0;
-  background-color: rgb(105 105 105 / 75%);
+  background-color: rgb(0 191 255 / 75%);
   list-style-type: none;
   margin: 0;
   padding: 0;
