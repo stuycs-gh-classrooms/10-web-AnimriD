@@ -13,40 +13,40 @@
 
 <h2>Modified Sierpinski Triangle</h2>
 <p> This take on the Sierpinski Triangle randomizes the color and width of the lines of the triangle. This results in many unique colors and widths due to the RGB system allowing for various colors and a possible width of 10 pixels. This is just one example of what the code might produce, while, if you run it yourself, it could result in various different Sierpinski triangles. The depth is 4 and the length is 300 pixels for this example.</p>
-<img src = "Desktop/Modify_Sierpinski" alt= "The Modified Sierpinski Triangle">
+<img src = "../Modify_Sierpinski.jpg" alt= "The Modified Sierpinski Triangle">
 <p> The Code for this Modified Sierpinski Triangle: </p>
 <pre><code>
 	def modify_sierpinski(t,depth,length):
-    		t.pd()
-   	    t.pensize(random.randrange(0, 10))
-    		if depth == 1:
-					t.lt(60)
-        	t.fd(length)
-       		t.rt(120)
-        	t.fd(length)
-        	t.rt(120)
-       		t.fd(length)
-        	t.rt(180)
-    		else:
-        	modify_sierpinski(t, depth - 1, length/2)
-        	t.fd(length/2)
-        	t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
-        	modify_sierpinski(t, depth - 1, length / 2)
-        	t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
-       		t.bk(length / 2)
-        	t.lt(60)
-        	t.fd(length / 2)
-       		t.rt(60)
-        	modify_sierpinski(t, depth - 1, length / 2)
-        	t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
-       		t.rt(120)
-       		t.fd(length / 2)
-        	t.lt(120)
+	    t.pd()
+	    t.pensize(random.randrange(0, 10))
+	    if depth == 1:
+	        t.lt(60)
+	        t.fd(length)
+	        t.rt(120)
+	        t.fd(length)
+	        t.rt(120)
+	        t.fd(length)
+	        t.rt(180)
+	    else:
+	        modify_sierpinski(t, depth - 1, length/2)
+	        t.fd(length/2)
+	        t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+	        modify_sierpinski(t, depth - 1, length / 2)
+	        t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+	        t.bk(length / 2)
+	        t.lt(60)
+	        t.fd(length / 2)
+	        t.rt(60)
+	        modify_sierpinski(t, depth - 1, length / 2)
+	        t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+	        t.rt(120)
+	        t.fd(length / 2)
+	        t.lt(120)
 </code></pre>
 
 <h2> Modified Tree </h2>
 <p> This modified version of a fractal tree aims to take autumn themes in the coloring of the tree. It has a brown and orange color scheme, which is common among many trees in the autumn months. I also tried to imitate the fact that trees start out very thick at the bottom but slowly, as it grows taller and branches out develops thinner and thinner branches before moving to leaves. This example uses a depth of 6, length of 100, and angle of 30°. </p>
-<img src="Desktop/Modify_Tree" alt="The Modified Tree">
+<img src="../Modify_Tree.jpg" alt="The Modified Tree">
 <p> Here is the code for the modified tree: </p>
 <pre><code>
 def modify_tree(t, depth, length, angle):
