@@ -1,92 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang =“en”>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
+	<meta charset = “utf-8”>
+	<title>Amrit’s Fractals</title>
+	<link href=“fractals.css” rel=“stylesheet”>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang =“en”&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;meta charset = “utf-8”&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;title&gt;Amrit’s Fractals&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>&lt;link href=“fractals.css” rel=“stylesheet”&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;h1&gt; Amrit’s Fractals&lt;/h1&gt;</p>
-<p class="p1">&lt;h2&gt; Modified Koch Curve&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h2&gt;Modified Sierpinski Triangle&lt;/h2&gt;</p>
-<p class="p1">&lt;p&gt; This take on the Sierpinski Triangle randomizes the color and width of the lines of the triangle. This results in many unique colors and widths due to the RGB system allowing for various colors and a possible width of 10 pixels. This is just one example of what the code might produce, while, if you run it yourself, it could result in various different Sierpinski triangles. The depth is 4 and the length is 300 pixels for this example.&lt;/p&gt;</p>
-<p class="p1">&lt;img src = “Desktop/Modify_Sierpinski.png” alt= “The Modified Sierpinski Triangle”&gt;</p>
-<p class="p1">&lt;p&gt; The Code for this Modified Sierpinski Triangle: &lt;/p&gt;</p>
-<p class="p1">&lt;pre&gt;&lt;code&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span>def modify_sierpinski(t,depth,length):</p>
-<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.pd()</p>
-<p class="p1"><span class="Apple-converted-space">   <span class="Apple-tab-span">	</span>           </span>t.pensize(random.randrange(0, 10))</p>
-<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>if depth == 1:</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.lt(60)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length)</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span> </span>t.rt(120)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.rt(120)</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.rt(180)</p>
-<p class="p1"><span class="Apple-converted-space">    <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>else:</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>modify_sierpinski(t, depth - 1, length/2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length/2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>modify_sierpinski(t, depth - 1, length / 2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.bk(length / 2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.lt(60)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length / 2)</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.rt(60)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>modify_sierpinski(t, depth - 1, length / 2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.rt(120)</p>
-<p class="p1"><span class="Apple-converted-space">       <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.fd(length / 2)</p>
-<p class="p1"><span class="Apple-converted-space">        <span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>t.lt(120)</p>
-<p class="p1">&lt;/code&gt;&lt;/pre&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;h2&gt; Modified Tree &lt;/h2&gt;</p>
-<p class="p1">&lt;p&gt; This modified version of a fractal tree aims to take autumn themes in the coloring of the tree. It has a brown and orange color scheme, which is common among many trees in the autumn months. I also tried to imitate the fact that trees start out very thick at the bottom but slowly, as it grows taller and branches out develops thinner and thinner branches before moving to leaves. This example uses a depth of 6, length of 100, and angle of 30°. &lt;/p&gt;</p>
-<p class="p1">&lt;img src=“Desktop/Modify_Tree.png” alt=“The Modified Tree”&gt;</p>
-<p class="p1">&lt;p&gt; Here is the code for the modified tree: &lt;/p&gt;</p>
-<p class="p1">&lt;pre&gt;&lt;code&gt;</p>
-<p class="p1">def modify_tree(t, depth, length, angle):</p>
-<p class="p1"><span class="Apple-converted-space">    </span>t.pd()</p>
-<p class="p1"><span class="Apple-converted-space">    </span>t.pensize(depth)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if depth == 1:</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.fd(length)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>else:</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.pensize(depth)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>modify_tree(t, depth - 1, length, angle)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.lt(angle)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.pensize(depth + 1)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.color("orange")</p>
-<p class="p1"><span class="Apple-converted-space">        </span>modify_tree(t, depth - 1, length, angle)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.bk(length)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.rt(90 - angle)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.pensize(depth + 1)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.color("brown")</p>
-<p class="p1"><span class="Apple-converted-space">        </span>modify_tree(t, depth - 1, length, angle)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.pensize(depth + 1)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.bk(length)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>t.lt(angle)</p>
-<p class="p1">&lt;/code&gt;&lt;/pre&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<h1> Amrit’s Fractals</h1>
+<h2> Modified Koch Curve</h2>
+
+<h2>Modified Sierpinski Triangle</h2>
+<p> This take on the Sierpinski Triangle randomizes the color and width of the lines of the triangle. This results in many unique colors and widths due to the RGB system allowing for various colors and a possible width of 10 pixels. This is just one example of what the code might produce, while, if you run it yourself, it could result in various different Sierpinski triangles. The depth is 4 and the length is 300 pixels for this example.</p>
+<img src = “Desktop/Modify_Sierpinski.png” alt= “The Modified Sierpinski Triangle”>
+<p> The Code for this Modified Sierpinski Triangle: </p>
+<pre><code>
+	def modify_sierpinski(t,depth,length):
+    		t.pd()
+   	          t.pensize(random.randrange(0, 10))
+    		if depth == 1:
+        			t.lt(60)
+        			t.fd(length)
+       			t.rt(120)
+        			t.fd(length)
+        			t.rt(120)
+       			t.fd(length)
+        			t.rt(180)
+    		else:
+        			modify_sierpinski(t, depth - 1, length/2)
+        			t.fd(length/2)
+        			t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+        			modify_sierpinski(t, depth - 1, length / 2)
+        			t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+       			t.bk(length / 2)
+        			t.lt(60)
+        			t.fd(length / 2)
+       			t.rt(60)
+        			modify_sierpinski(t, depth - 1, length / 2)
+        			t.color(random.randrange(0,256), random.randrange(0,256), random.randrange(0,256))
+       			t.rt(120)
+       			t.fd(length / 2)
+        			t.lt(120)
+</code></pre>
+
+<h2> Modified Tree </h2>
+<p> This modified version of a fractal tree aims to take autumn themes in the coloring of the tree. It has a brown and orange color scheme, which is common among many trees in the autumn months. I also tried to imitate the fact that trees start out very thick at the bottom but slowly, as it grows taller and branches out develops thinner and thinner branches before moving to leaves. This example uses a depth of 6, length of 100, and angle of 30°. </p>
+<img src=“Desktop/Modify_Tree.png” alt=“The Modified Tree”>
+<p> Here is the code for the modified tree: </p>
+<pre><code>
+def modify_tree(t, depth, length, angle):
+    t.pd()
+    t.pensize(depth)
+    if depth == 1:
+        t.fd(length)
+    else:
+        t.pensize(depth)
+        modify_tree(t, depth - 1, length, angle)
+        t.lt(angle)
+        t.pensize(depth + 1)
+        t.color("orange")
+        modify_tree(t, depth - 1, length, angle)
+        t.bk(length)
+        t.rt(90 - angle)
+        t.pensize(depth + 1)
+        t.color("brown")
+        modify_tree(t, depth - 1, length, angle)
+        t.pensize(depth + 1)
+        t.bk(length)
+        t.lt(angle)
+</code></pre>
 </body>
+
 </html>
