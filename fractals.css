@@ -1,0 +1,23 @@
+body{
+  background-color: rgb(137 207 240 / 50%);
+  display:block;
+  margin:10px;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom:50px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
